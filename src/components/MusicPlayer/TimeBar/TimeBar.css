@@ -1,0 +1,18 @@
+.time-bar-background {
+    width: 100vw;
+    height: 5px;
+    background-color: var(--grey-dark);
+    transition: 0.2s;
+    z-index: 4;
+}
+
+.time-bar {
+    height: 100%;
+    width: 0px;
+    background-color: var(--green);
+    pointer-events: none;
+}
+
+.time-bar-background:hover {
+    height: 15px;
+}

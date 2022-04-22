@@ -1,0 +1,9 @@
+.hatfinder-gif {
+    display: flex;
+    justify-content: center;
+}
+
+.hatfinder-gif img {
+    max-width: 300px;
+    width: 100%;
+}

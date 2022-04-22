@@ -1,0 +1,52 @@
+.contact-section {
+    padding: 0px 15%;
+    text-align: left;
+    background-color: var(--grey);
+    padding: 0px 10%;
+}
+
+.contact-border {
+    /* display: flex; */
+    background-color: var(--grey);
+    padding: 0px 10%;
+    box-sizing: border-box;
+
+    z-index: 3;
+    max-height: calc(100vh - 120px);
+}
+
+.contact-header {
+    font-size: calc(20px + 2vw);
+    font-weight: bold;
+    color: var(--green);
+}
+
+.contact-ways {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-way {
+    width: 50px;
+    height: 50px;
+    margin: 16px 16px;
+}
+
+.contact-way a {
+    background: none;
+}
+
+.contact-way svg {
+    fill: var(--white);
+    transition: 0.5s;
+}
+
+.contact-way:hover svg {
+    fill: var(--green);
+}
+
+.contact-way-detail {
+    color: var(--white);
+}

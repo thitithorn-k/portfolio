@@ -1,0 +1,117 @@
+.educations-section {
+    padding: 0px 15%;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: var(--grey-bright);
+}
+
+.education-border {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--grey);
+    padding: 50px;
+    box-shadow: 5px 5px 5px var(--grey-dark);
+    z-index: 3;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    min-width: 820px;
+}
+
+.educations-header {
+    color: var(--green);
+    font-size:calc(20px + 2vw);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.education {
+    margin-bottom: 16px;
+}
+
+.education-place {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education-year {
+    color: var(--white);
+    font-weight: normal;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.education-detail {
+    color: var(--white);
+    line-height: 1.6;
+}
+
+.education-detail-section {
+    font-weight: bold;
+}
+
+.drawer-head {
+    margin: 0px;
+    
+}
+
+.drawer-head * {
+    pointer-events: none;
+}
+
+.drawer {
+    height: auto;
+    max-height: 500px;
+    overflow: hidden;
+    transition: 5s;
+    background-color: var(--grey-dark);
+    transition: max-height 0.5s ease-out;
+}
+
+.drawer-hide {
+    max-height: 0px;
+    transition: max-height 0.25s ease-in;
+}
+
+.dropdown-svg {
+    width: 12px;
+    fill: var(--green-dark);
+    margin-left: 6px;
+    transition: 0.3s;
+    transform-origin: 50% 10px;;
+}
+
+.dropdown-svg-open {
+    transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 864px) {
+    .educations-section {
+        padding: 0px 5%;
+    }
+
+    .education-border {
+        min-width: unset;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .educations-section {
+        padding: 0px;
+    }
+
+    .education-border {
+        min-width: unset;
+        background: none;
+        box-shadow: none;
+        max-height: calc(100vh - 60px);
+    }
+}

@@ -1,0 +1,43 @@
+.skill {
+    margin: 16px;
+    padding: 12px;
+    width: 10vw;
+    min-width: 140px;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.skill-logo {
+    fill: var(--green);
+    box-sizing: content-box;
+    margin-right: 16px;
+}
+
+.skill-logo svg {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-name {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.skill-level {
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    bottom: 0px;
+    background-color: var(--green);
+}
+
+@media only screen and (max-width: 450px) {
+    .skill {
+        width: 8vw;
+        min-width: none;
+        margin: 6px;
+    }
+}

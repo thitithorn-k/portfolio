@@ -1,0 +1,50 @@
+.navbar {
+    color: var(--white);
+    background-color: var(--grey-bright);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6px;
+    box-shadow: 5px 0px 5px black;
+    z-index: 3;
+    width: 100vw;
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 52px;
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu{
+    height: 100%;
+}
+
+.navbar-menu ul{
+    display: flex;
+    
+    list-style-type: none;
+    height: 100%;
+    margin: 0px;
+}
+
+.navbar-menu li{
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+#navbar-menu-selected {
+    color: var(--green);
+    font-weight: bold;
+}

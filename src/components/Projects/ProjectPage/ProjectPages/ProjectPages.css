@@ -1,0 +1,27 @@
+.project-article {
+    height: calc(100% - 36px);
+    width: 100%;
+    overflow: auto;
+    padding: 32px;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+.project-article-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.project-article-header-img {
+    width: 100%;
+}
+
+.project-article-body > div {
+    margin-bottom: 16px;
+}
+
+.project-article-body > hr {
+    margin: 32px 0px;
+}

@@ -1,0 +1,17 @@
+.music-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.control-btn {
+    fill: var(--green);
+    margin: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.control-btn:hover {
+    fill: var(--green-dark);
+}

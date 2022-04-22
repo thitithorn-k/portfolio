@@ -1,0 +1,17 @@
+.visualizer {
+    display: flex;
+    height: 100%;
+    padding: 8px 8px 0px 8px;
+    bottom: 0px;
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.visualizer-bar {
+    width: 10px;
+    min-width: 4px;
+    height: 0px;
+    margin-left: 8px;
+    background-color: var(--green);
+}

@@ -1,0 +1,91 @@
+:root {
+  --grey: #282c34;
+  --grey-dark: #21242b;
+  --grey-bright: #343942;
+  --green: #66FF66;
+  --green-dark: #61e261;
+  --green-dark2: #618b61;
+  --green-dark3: #3c4d3c;
+  --white: #e6e6e6;
+}
+
+/* Scroll bar ===================================== */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: 20;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--grey-dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+/* Text selection color ===================================== */
+::-moz-selection { /* Code for Firefox */
+  color: var(--green);
+  background: var(--grey-dark);
+}
+
+::selection {
+  color: var(--green);
+  background: var(--grey-dark);
+}
+
+/* To disable user select */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* a Links ========================================================== */
+a {
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(to right, var(--green), var(--green));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 50% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+a:link {
+  color: var(--green);
+}
+
+a:visited {
+  color: var(--green);
+}
+
+/* Scoll Snap */
+.hide-scoller {
+  overflow-y: hidden;
+}
+
+@font-face {
+  font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/DigitalNumbers-Regular.woff') format('woff');
+}

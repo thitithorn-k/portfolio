@@ -1,0 +1,84 @@
+.aboutme-section {
+    padding: 0px 15%;
+    text-align: left;
+    background-color: var(--grey-bright);
+}
+
+.aboutme-border {
+    display: flex;
+    background-color: var(--grey);
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px var(--grey-dark);
+    overflow-y: auto;
+    /* border: 1px var(--green);
+    border-style: solid; */
+
+    background: 
+    linear-gradient(to right, var(--grey), var(--grey)),
+    linear-gradient(to right, var(--green), var(--green));
+    background-size: 100% 0.1em, 0 0.1em;
+    z-index: 3;
+    max-height: calc(100vh - 120px);
+}
+
+.profile_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 64px;
+}
+
+.aboutme-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 100%; */
+    color: var(--white);
+    text-align: left;
+}
+
+.aboutme-header {
+    color: var(--green);
+    font-size:calc(20px + 2vw);
+    font-weight: bold;
+    margin: 0px 0px 16px 0px;
+}
+
+.aboutme-content div {
+    color: var(--white);
+    margin: 0px 0px 8px 0px;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutme-section {
+        padding: 0px 5%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .aboutme-section {
+        padding: 0px 0px;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .aboutme-border {
+        flex-direction: column;
+        margin: 0;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+        background: var(--grey-bright);
+        box-shadow: none;
+    }
+
+    .profile_img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+}

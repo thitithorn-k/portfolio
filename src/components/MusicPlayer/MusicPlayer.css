@@ -1,0 +1,100 @@
+.music-player {
+    position: relative;
+    height: 100px;
+    position: fixed;
+    bottom: -95px;
+    transition: 0.2s;
+    z-index: 3;
+    background-color: var(--grey);
+    box-sizing: border-box;
+}
+
+.music-player:hover {
+    bottom: 0px;
+}
+
+.music-player:hover .time-bar-background {
+    height: 15px;
+}
+
+.toggle-div {
+    position: absolute;
+    right: 20px;
+    top: -35px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--green);
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.toggle-div svg{
+    fill: var(--grey);
+}
+
+.music-console {
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.music-controller-section {
+    width: 60%;
+    height: 100%;
+}
+
+.time-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Digital Numbers Regular';
+    width: 20%;
+    height: 100%;
+    padding-top: 8px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.time-current {
+    position: relative;
+    color: var(--green);
+    font-size: 32px;
+}
+
+.time-duration {
+    position: relative;
+    color: var(--grey-dark);
+    font-size: 17px;
+}
+
+.time-text-font {
+    position: absolute;
+    /* top: 0px; */
+    color: var(--green);
+    z-index: 5;
+}
+
+.time-text-back {
+    /* position: absolute; */
+    /* top: 0px; */
+    color: var(--green-dark3);
+    z-index: 4;
+}
+
+.volume-bar {
+    width: 100vw;
+    height: 50vh;
+    /* background-color: var(--green); */
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    pointer-events: none;
+
+    background: rgb(255,255,255);
+    /* background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(102,255,102,0.5) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(102,255,102,0.5) 100%); */
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(102,255,102,0.3) 100%);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#66ff66",GradientType=1); */
+}

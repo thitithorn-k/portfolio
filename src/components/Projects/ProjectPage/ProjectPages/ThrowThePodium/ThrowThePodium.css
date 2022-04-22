@@ -1,0 +1,16 @@
+.throw-the-podium-ex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.throw-the-podium-ex img {
+    width: 45%;
+    margin: 8px;
+}
+
+@media only screen and (max-width: 700px) {
+    .throw-the-podium-ex img {
+        width: 90%;
+    }
+}

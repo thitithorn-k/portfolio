@@ -1,0 +1,44 @@
+.fullscreenask {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 300px;
+    height: 125px;
+    z-index: 5;
+    background-color: var(--grey);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--green);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.fullscreen-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.fullscreen-text {
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.fullscreen-btn {
+    background-color: var(--green);
+    border: 0px;
+    width: 90%;
+    height: 25px;
+}
+
+.fullscreen-btn:hover {
+    background-color: var(--green-dark);
+}
